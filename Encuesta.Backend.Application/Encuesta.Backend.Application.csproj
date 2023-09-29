@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Encuesta.Backend.Domain\Encuesta.Backend.Domain.csproj" />
+    <ProjectReference Include="..\Encuesta.Backend.Infrastructure\Encuesta.Backend.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
